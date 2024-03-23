@@ -1,0 +1,206 @@
+2024-03-23 12:19:40.093 -03:00 [INF] Registered 1 endpoints in 4.961 milliseconds.
+2024-03-23 12:19:41.235 -03:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-23 12:19:41.279 -03:00 [INF] Creating key {06669e5e-ab40-4b45-8823-bd1ea33d873a} with creation date 2024-03-23 15:19:41Z, activation date 2024-03-23 15:19:41Z, and expiration date 2024-06-21 15:19:41Z.
+2024-03-23 12:19:41.289 -03:00 [INF] Writing data to file 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys\key-06669e5e-ab40-4b45-8823-bd1ea33d873a.xml'.
+2024-03-23 12:19:42.152 -03:00 [INF] Now listening on: https://localhost:57679
+2024-03-23 12:19:42.153 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-23 12:19:42.154 -03:00 [INF] Hosting environment: Development
+2024-03-23 12:19:42.155 -03:00 [INF] Content root path: C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.Web
+2024-03-23 12:19:47.208 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2024-03-23 12:19:47.460 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 343.7037ms
+2024-03-23 12:19:47.466 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-03-23 12:19:47.756 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 289.714ms
+2024-03-23 12:19:47.768 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui.css - null null
+2024-03-23 12:19:47.768 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.css - null null
+2024-03-23 12:19:47.768 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui-bundle.js - null null
+2024-03-23 12:19:47.769 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-23 12:19:47.768 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui-standalone-preset.js - null null
+2024-03-23 12:19:47.793 -03:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2024-03-23 12:19:47.794 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.css - 200 218 text/css 26.1845ms
+2024-03-23 12:19:47.810 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 41.3641ms
+2024-03-23 12:19:47.817 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-03-23 12:19:47.817 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-03-23 12:19:47.825 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui-standalone-preset.js - 200 230642 text/javascript 56.5516ms
+2024-03-23 12:19:47.825 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui.css - 200 151213 text/css 56.8006ms
+2024-03-23 12:19:47.835 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-03-23 12:19:47.838 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui-bundle.js - 200 1385018 text/javascript 69.3366ms
+2024-03-23 12:19:48.164 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-03-23 12:19:48.182 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/favicon-32x32.png - null null
+2024-03-23 12:19:48.186 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-03-23 12:19:48.189 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/favicon-32x32.png - 200 628 image/png 6.4682ms
+2024-03-23 12:19:48.213 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-03-23 12:19:48.772 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 608.9054ms
+2024-03-23 12:20:00.997 -03:00 [INF] Request starting HTTP/2 POST https://localhost:57679/registro-ponto/registrar - application/json 22
+2024-03-23 12:20:01.013 -03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-03-23 12:20:01.020 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-03-23 12:20:01.021 -03:00 [INF] Request finished HTTP/2 POST https://localhost:57679/registro-ponto/registrar - 401 0 null 23.5509ms
+2024-03-23 12:39:36.694 -03:00 [INF] Registered 1 endpoints in 871 milliseconds.
+2024-03-23 12:39:36.902 -03:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-23 12:39:37.116 -03:00 [INF] Now listening on: https://localhost:57679
+2024-03-23 12:39:37.118 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-23 12:39:37.119 -03:00 [INF] Hosting environment: Development
+2024-03-23 12:39:37.119 -03:00 [INF] Content root path: C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.Web
+2024-03-23 12:39:37.508 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2024-03-23 12:39:37.614 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 109.9437ms
+2024-03-23 12:39:37.621 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-03-23 12:39:37.757 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 135.7544ms
+2024-03-23 12:39:37.772 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-23 12:39:37.787 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 15.0478ms
+2024-03-23 12:39:38.160 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-03-23 12:39:38.176 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-03-23 12:39:38.646 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 485.749ms
+2024-03-23 12:39:54.406 -03:00 [INF] Registered 1 endpoints in 971 milliseconds.
+2024-03-23 12:39:54.593 -03:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-23 12:39:54.694 -03:00 [FTL] Application startup exception
+System.InvalidOperationException: Scheme already exists: Bearer
+   at Microsoft.AspNetCore.Authentication.AuthenticationOptions.AddScheme(String name, Action`1 configureBuilder)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Microsoft.AspNetCore.Authentication.AuthenticationSchemeProvider..ctor(IOptions`1 options, IDictionary`2 schemes)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2024-03-23 12:39:54.763 -03:00 [ERR] Hosting failed to start
+System.InvalidOperationException: Scheme already exists: Bearer
+   at Microsoft.AspNetCore.Authentication.AuthenticationOptions.AddScheme(String name, Action`1 configureBuilder)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Microsoft.AspNetCore.Authentication.AuthenticationSchemeProvider..ctor(IOptions`1 options, IDictionary`2 schemes)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2024-03-23 12:40:35.970 -03:00 [INF] Registered 1 endpoints in 975 milliseconds.
+2024-03-23 12:40:36.173 -03:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-23 12:40:36.314 -03:00 [INF] Now listening on: https://localhost:57679
+2024-03-23 12:40:36.316 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-23 12:40:36.316 -03:00 [INF] Hosting environment: Development
+2024-03-23 12:40:36.318 -03:00 [INF] Content root path: C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.Web
+2024-03-23 12:40:44.647 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2024-03-23 12:40:55.491 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 12:40:55.503 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 10859.4319ms
+2024-03-23 12:40:55.508 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-03-23 12:40:56.754 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 12:40:56.882 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 1372.765ms
+2024-03-23 12:40:56.898 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-23 12:40:56.911 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 13.1277ms
+2024-03-23 12:40:57.061 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-03-23 12:41:04.154 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 12:41:04.165 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-03-23 12:41:04.656 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 7595.5494ms
+2024-03-23 12:41:42.246 -03:00 [INF] Request starting HTTP/2 POST https://localhost:57679/registro-ponto/registrar - application/json 22
+2024-03-23 12:41:56.220 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Security.Authentication.AuthenticationException: Could not validate token. This token is not valid
+   at Ponto.Eletronico.Infrastructure.PontoAuthenticationHandler.GetPrincipalClaim(String token) in C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.Infrastructure\PontoAuthenticationHandler.cs:line 64
+   at Ponto.Eletronico.Infrastructure.PontoAuthenticationHandler.HandleAuthenticateAsync() in C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.Infrastructure\PontoAuthenticationHandler.cs:line 43
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-03-23 12:41:56.252 -03:00 [INF] Request finished HTTP/2 POST https://localhost:57679/registro-ponto/registrar - 500 null text/plain; charset=utf-8 14005.9284ms
+2024-03-23 12:41:59.019 -03:00 [INF] Request starting HTTP/2 POST https://localhost:57679/registro-ponto/registrar - application/json 22
+2024-03-23 12:42:12.870 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Security.Authentication.AuthenticationException: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+ ---> Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateAudience(IEnumerable`1 audiences, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateAudience(IEnumerable`1 audiences, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Ponto.Eletronico.Infrastructure.PontoAuthenticationHandler.GetPrincipalClaim(String token) in C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.Infrastructure\PontoAuthenticationHandler.cs:line 69
+   --- End of inner exception stack trace ---
+   at Ponto.Eletronico.Infrastructure.PontoAuthenticationHandler.GetPrincipalClaim(String token) in C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.Infrastructure\PontoAuthenticationHandler.cs:line 73
+   at Ponto.Eletronico.Infrastructure.PontoAuthenticationHandler.HandleAuthenticateAsync() in C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.Infrastructure\PontoAuthenticationHandler.cs:line 43
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-03-23 12:42:12.893 -03:00 [INF] Request finished HTTP/2 POST https://localhost:57679/registro-ponto/registrar - 500 null text/plain; charset=utf-8 13874.0343ms
+2024-03-23 12:43:19.137 -03:00 [INF] Registered 1 endpoints in 1.031 milliseconds.
+2024-03-23 12:43:19.398 -03:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-23 12:43:19.542 -03:00 [INF] Now listening on: https://localhost:57679
+2024-03-23 12:43:19.543 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-23 12:43:19.544 -03:00 [INF] Hosting environment: Development
+2024-03-23 12:43:19.545 -03:00 [INF] Content root path: C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.Web
+2024-03-23 12:43:28.659 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2024-03-23 12:43:39.316 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 12:43:39.327 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 10673.0933ms
+2024-03-23 12:43:39.333 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-03-23 12:43:39.336 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 12:43:39.466 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 133.559ms
+2024-03-23 12:43:39.482 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-23 12:43:39.496 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 14.251ms
+2024-03-23 12:43:39.647 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-03-23 12:43:39.652 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 12:43:39.663 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-03-23 12:43:40.125 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 478.3843ms
+2024-03-23 12:43:56.582 -03:00 [INF] Request starting HTTP/2 POST https://localhost:57679/registro-ponto/registrar - application/json 22
+2024-03-23 12:43:56.654 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Endpoint HTTP: POST registro-ponto/registrar contains authorization metadata, but a middleware was not found that supports authorization.
+Configure your application startup by adding app.UseAuthorization() in the application startup code. If there are calls to app.UseRouting() and app.UseEndpoints(...), the call to app.UseAuthorization() must go between them.
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingAuthMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.DefaultFilesMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-03-23 12:43:56.676 -03:00 [INF] Request finished HTTP/2 POST https://localhost:57679/registro-ponto/registrar - 500 null text/plain; charset=utf-8 94.1193ms
+2024-03-23 12:44:18.562 -03:00 [INF] Request starting HTTP/2 POST https://localhost:57679/registro-ponto/registrar - application/json 22
+2024-03-23 12:44:37.946 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Endpoint HTTP: POST registro-ponto/registrar contains authorization metadata, but a middleware was not found that supports authorization.
+Configure your application startup by adding app.UseAuthorization() in the application startup code. If there are calls to app.UseRouting() and app.UseEndpoints(...), the call to app.UseAuthorization() must go between them.
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingAuthMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.DefaultFilesMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-03-23 12:44:37.955 -03:00 [INF] Request finished HTTP/2 POST https://localhost:57679/registro-ponto/registrar - 500 null text/plain; charset=utf-8 19392.89ms
