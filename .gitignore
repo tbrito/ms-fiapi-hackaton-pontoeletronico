@@ -396,3 +396,92 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Arquivos do .NET Core
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.dll
+*.exe
+*.pdb
+*.cache
+*.VisualState.xml
+*.LastGenOutput.log
+*.log
+*.psess
+*.vsp
+*.vspx
+*.sap
+project.lock.json
+project.fragment.lock.json
+*.nuget.props
+*.nuget.targets
+*.csproj.user
+*.vbproj.user
+*.fsproj.user
+*.vcxproj.user
+*.vcxproj.filters.user
+*.xproj.user
+*.paket.user
+*.paket.props
+*.paket.targets
+*.paket.references
+paket-files/
+*.h
+*.iobj
+*.ipdb
+*.i
+*.resources
+*.tlb
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+*.bak
+*.swp
+*.bak.*
+*.*~
+*.swp.*
+*.userprefs
+test-results/
+IssueList.txt
+*.pidb
+*.svclog
+*.scc
+
+# Arquivos do SpecFlow
+*.feature.cs
+
+# Arquivos do Visual Studio Code
+.vscode/
+
+# Arquivos do Rider
+.idea/
+
+# Arquivos do Visual Studio
+.vs/
+
+# Arquivos de pacotes
+# o diret�rio de pacotes pode ser removido, mas se voc� o restaurar, n�o o verifique.
+**/[Pp]ackages/*
+# exceto arquivos .config em pacotes necess�rios para o NuGet
+!**/[Pp]ackages/*.config
+# Ignorar arquivos de pacotes NuGet
+*.nupkg
+# O diret�rio de pacotes pode ser removido, mas se voc� o restaurar, n�o o verifique.
+**/[Pp]ackages/*
+# exceto arquivos .config em pacotes necess�rios para o NuGet
+!**/[Pp]ackages/*.config
+# Ignorar arquivos de pacotes NuGet
+*.nupkg
+
+# Arquivos de build
+bin/
+obj/
