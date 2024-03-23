@@ -2,6 +2,9 @@
 using MediatR;
 using Ponto.Eletronico.Core.Interfaces;
 using Ponto.Eletronico.UseCases.RegistroPonto.RegistrarPonto;
+using System.Diagnostics;
+using System.Linq;
+using System.Security.Claims;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -13,7 +16,8 @@ namespace Ponto.Eletronico.Web.RegistroPonto.Registrar;
 /// <remarks>
 /// Criar um novo registro de ponto.
 /// </remarks>
-public class Registrar(IMediator _mediator, IIdentityService service) : Endpoint<CriarRegistroRequest, CriarRegistroResponse>
+/// , IIdentityService service
+public class Registrar(IMediator _mediator) : Endpoint<CriarRegistroRequest, CriarRegistroResponse>
 {
     public override void Configure()
     {
@@ -32,7 +36,14 @@ public class Registrar(IMediator _mediator, IIdentityService service) : Endpoint
       CriarRegistroRequest request,
       CancellationToken ct)
     {
-        var result = await _mediator.Send(new CriarRegistroCommand(service.GetUserName()!), ct);
+        if (User.Identity?.IsAuthenticated == false)
+        {
+            Debug.Print("Problema");
+        }
+
+        var claimValue = User.Claims.FirstOrDefault(claim => claim.Type.Contains(ClaimTypes.Email));
+        
+        var result = await _mediator.Send(new CriarRegistroCommand(claimValue.Value), ct);
 
         if (result.IsSuccess)
         {

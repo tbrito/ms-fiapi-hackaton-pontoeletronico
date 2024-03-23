@@ -15,7 +15,7 @@ public class AppDbContext : DbContext
     _dispatcher = dispatcher;
   }
 
-  public DbSet<RegistroPonto> RegistroPontos => Set<RegistroPonto>();
+  public DbSet<RegitroPontos> RegitroPontos => Set<RegitroPontos>();
 
 
   protected override void OnModelCreating(ModelBuilder modelBuilder)

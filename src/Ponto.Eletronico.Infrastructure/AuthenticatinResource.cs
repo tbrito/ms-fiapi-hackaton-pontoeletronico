@@ -8,7 +8,7 @@ namespace Ponto.Eletronico.Infrastructure;
 
 public static class AuthenticationResource
 {
-    public static void AddKeyCloackAuthentication(this IServiceCollection services)
+    public static IServiceCollection AddKeyCloackAuthentication(this IServiceCollection services)
     {
         IdentityModelEventSource.ShowPII = true;
 
@@ -44,5 +44,6 @@ public static class AuthenticationResource
             _.RequireHttpsMetadata = false;
         });
 
+        return services;
     }
 }

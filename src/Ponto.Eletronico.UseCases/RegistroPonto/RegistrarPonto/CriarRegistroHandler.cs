@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Ponto.Eletronico.UseCases.RegistroPonto.RegistrarPonto;
 
-public class CriarRegistroHandler(IRepository<Core.Entities.RegistroPonto> _repository)
+public class CriarRegistroHandler(IRepository<Core.Entities.RegitroPontos> _repository)
   : ICommandHandler<CriarRegistroCommand, Result<bool>>
 {
     public async Task<Result<bool>> Handle(CriarRegistroCommand request,
@@ -15,6 +15,6 @@ public class CriarRegistroHandler(IRepository<Core.Entities.RegistroPonto> _repo
 
         var createdItem = await _repository.AddAsync(registroPonto, cancellationToken);
 
-        return createdItem is Core.Entities.RegistroPonto;
+        return createdItem is Core.Entities.RegitroPontos;
     }
 }

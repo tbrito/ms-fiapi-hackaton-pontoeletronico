@@ -204,3 +204,776 @@ Configure your application startup by adding app.UseAuthorization() in the appli
    at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
 2024-03-23 12:44:37.955 -03:00 [INF] Request finished HTTP/2 POST https://localhost:57679/registro-ponto/registrar - 500 null text/plain; charset=utf-8 19392.89ms
+2024-03-23 14:15:02.716 -03:00 [INF] Registered 1 endpoints in 821 milliseconds.
+2024-03-23 14:15:02.939 -03:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-23 14:15:03.112 -03:00 [INF] Now listening on: https://localhost:57679
+2024-03-23 14:15:03.114 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-23 14:15:03.115 -03:00 [INF] Hosting environment: Development
+2024-03-23 14:15:03.116 -03:00 [INF] Content root path: C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.Web
+2024-03-23 14:15:06.940 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2024-03-23 14:16:26.279 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:16:26.292 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 79368.2565ms
+2024-03-23 14:16:26.297 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-03-23 14:16:26.304 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:16:26.436 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 139.4545ms
+2024-03-23 14:16:26.448 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-23 14:16:26.461 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 13.3529ms
+2024-03-23 14:16:26.466 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2024-03-23 14:16:26.532 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 65.6934ms
+2024-03-23 14:16:26.652 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-03-23 14:16:26.658 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:16:26.672 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-03-23 14:16:27.249 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 596.851ms
+2024-03-23 14:16:45.133 -03:00 [INF] Request starting HTTP/2 POST https://localhost:57679/registro-ponto/registrar - application/json 22
+2024-03-23 14:16:45.208 -03:00 [INF] Executing endpoint 'HTTP: POST registro-ponto/registrar'
+2024-03-23 14:16:45.340 -03:00 [INF] Executed endpoint 'HTTP: POST registro-ponto/registrar'
+2024-03-23 14:16:45.343 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Cannot resolve scoped service 'Ponto.Eletronico.Core.Interfaces.IIdentityService' from root provider.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateResolution(ServiceCallSite callSite, IServiceScope scope, IServiceScope rootScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at FastEndpoints.ServiceResolver.CreateSingleton(Type type)
+   at FastEndpoints.EndpointDefinition.GetValidator()
+   at FastEndpoints.Endpoint`2.ValidateRequest(TRequest req, EndpointDefinition def, List`1 validationFailures, CancellationToken cancellation)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-03-23 14:16:45.378 -03:00 [INF] Request finished HTTP/2 POST https://localhost:57679/registro-ponto/registrar - 500 null text/plain; charset=utf-8 245.1669ms
+2024-03-23 14:21:07.781 -03:00 [INF] Registered 1 endpoints in 5.743 milliseconds.
+2024-03-23 14:21:07.960 -03:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-23 14:21:08.143 -03:00 [INF] Now listening on: https://localhost:57679
+2024-03-23 14:21:08.145 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-23 14:21:08.146 -03:00 [INF] Hosting environment: Development
+2024-03-23 14:21:08.148 -03:00 [INF] Content root path: C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.Web
+2024-03-23 14:21:08.563 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2024-03-23 14:21:08.655 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:21:08.667 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 110.5227ms
+2024-03-23 14:21:08.673 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-03-23 14:21:08.680 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:21:08.812 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 139.4127ms
+2024-03-23 14:21:08.825 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-23 14:21:08.838 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 13.0915ms
+2024-03-23 14:21:08.843 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2024-03-23 14:21:08.884 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.0364ms
+2024-03-23 14:21:09.018 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-03-23 14:21:09.023 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:21:09.036 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-03-23 14:21:09.551 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 533.5084ms
+2024-03-23 14:21:14.588 -03:00 [INF] Request starting HTTP/2 POST https://localhost:57679/registro-ponto/registrar - application/json 22
+2024-03-23 14:21:14.665 -03:00 [INF] Executing endpoint 'HTTP: POST registro-ponto/registrar'
+2024-03-23 14:21:14.730 -03:00 [INF] Executed endpoint 'HTTP: POST registro-ponto/registrar'
+2024-03-23 14:21:14.733 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Cannot resolve scoped service 'Ponto.Eletronico.Core.Interfaces.IIdentityService' from root provider.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateResolution(ServiceCallSite callSite, IServiceScope scope, IServiceScope rootScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at FastEndpoints.ServiceResolver.CreateSingleton(Type type)
+   at FastEndpoints.EndpointDefinition.GetValidator()
+   at FastEndpoints.Endpoint`2.ValidateRequest(TRequest req, EndpointDefinition def, List`1 validationFailures, CancellationToken cancellation)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-03-23 14:21:14.770 -03:00 [INF] Request finished HTTP/2 POST https://localhost:57679/registro-ponto/registrar - 500 null text/plain; charset=utf-8 182.1224ms
+2024-03-23 14:26:14.345 -03:00 [INF] Registered 1 endpoints in 992 milliseconds.
+2024-03-23 14:26:14.529 -03:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-23 14:26:14.689 -03:00 [INF] Now listening on: https://localhost:57679
+2024-03-23 14:26:14.690 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-23 14:26:14.691 -03:00 [INF] Hosting environment: Development
+2024-03-23 14:26:14.692 -03:00 [INF] Content root path: C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.Web
+2024-03-23 14:26:18.360 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2024-03-23 14:26:18.443 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:26:18.455 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 100.288ms
+2024-03-23 14:26:18.462 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-03-23 14:26:18.468 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:26:18.601 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 138.2775ms
+2024-03-23 14:26:18.617 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-23 14:26:18.630 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 13.6471ms
+2024-03-23 14:26:18.634 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2024-03-23 14:26:18.677 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 42.7838ms
+2024-03-23 14:26:18.824 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-03-23 14:26:18.829 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:26:18.845 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-03-23 14:26:19.395 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 571.6044ms
+2024-03-23 14:26:25.082 -03:00 [INF] Request starting HTTP/2 POST https://localhost:57679/registro-ponto/registrar - application/json 22
+2024-03-23 14:26:25.156 -03:00 [INF] Executing endpoint 'HTTP: POST registro-ponto/registrar'
+2024-03-23 14:26:25.222 -03:00 [INF] Executed endpoint 'HTTP: POST registro-ponto/registrar'
+2024-03-23 14:26:25.225 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Cannot resolve scoped service 'Ponto.Eletronico.Core.Interfaces.IIdentityService' from root provider.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateResolution(ServiceCallSite callSite, IServiceScope scope, IServiceScope rootScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at FastEndpoints.ServiceResolver.CreateSingleton(Type type)
+   at FastEndpoints.EndpointDefinition.GetValidator()
+   at FastEndpoints.Endpoint`2.ValidateRequest(TRequest req, EndpointDefinition def, List`1 validationFailures, CancellationToken cancellation)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-03-23 14:26:25.257 -03:00 [INF] Request finished HTTP/2 POST https://localhost:57679/registro-ponto/registrar - 500 null text/plain; charset=utf-8 175.253ms
+2024-03-23 14:28:49.896 -03:00 [INF] Registered 1 endpoints in 988 milliseconds.
+2024-03-23 14:28:50.089 -03:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-23 14:28:50.249 -03:00 [INF] Now listening on: https://localhost:57679
+2024-03-23 14:28:50.250 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-23 14:28:50.251 -03:00 [INF] Hosting environment: Development
+2024-03-23 14:28:50.252 -03:00 [INF] Content root path: C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.Web
+2024-03-23 14:28:53.556 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2024-03-23 14:28:53.640 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:28:53.653 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 102.2391ms
+2024-03-23 14:28:53.660 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-03-23 14:28:53.665 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:28:53.809 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 149.0476ms
+2024-03-23 14:28:53.820 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-23 14:28:53.832 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 12.5206ms
+2024-03-23 14:28:53.837 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2024-03-23 14:28:53.876 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 39.498ms
+2024-03-23 14:28:54.008 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-03-23 14:28:54.012 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:28:54.025 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-03-23 14:28:54.516 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 508.3193ms
+2024-03-23 14:29:00.619 -03:00 [INF] Request starting HTTP/2 POST https://localhost:57679/registro-ponto/registrar - application/json 22
+2024-03-23 14:29:00.694 -03:00 [INF] Executing endpoint 'HTTP: POST registro-ponto/registrar'
+2024-03-23 14:29:00.758 -03:00 [INF] Executed endpoint 'HTTP: POST registro-ponto/registrar'
+2024-03-23 14:29:00.762 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Cannot resolve scoped service 'Ponto.Eletronico.Core.Interfaces.IIdentityService' from root provider.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateResolution(ServiceCallSite callSite, IServiceScope scope, IServiceScope rootScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at FastEndpoints.ServiceResolver.CreateSingleton(Type type)
+   at FastEndpoints.EndpointDefinition.GetValidator()
+   at FastEndpoints.Endpoint`2.ValidateRequest(TRequest req, EndpointDefinition def, List`1 validationFailures, CancellationToken cancellation)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-03-23 14:29:00.794 -03:00 [INF] Request finished HTTP/2 POST https://localhost:57679/registro-ponto/registrar - 500 null text/plain; charset=utf-8 174.8548ms
+2024-03-23 14:33:12.899 -03:00 [INF] Registered 1 endpoints in 838 milliseconds.
+2024-03-23 14:33:13.085 -03:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-23 14:33:13.252 -03:00 [INF] Now listening on: https://localhost:57679
+2024-03-23 14:33:13.253 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-23 14:33:13.254 -03:00 [INF] Hosting environment: Development
+2024-03-23 14:33:13.255 -03:00 [INF] Content root path: C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.Web
+2024-03-23 14:33:16.673 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2024-03-23 14:33:16.762 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:33:16.773 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 106.3024ms
+2024-03-23 14:33:16.780 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-03-23 14:33:16.788 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:33:16.923 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 142.186ms
+2024-03-23 14:33:16.933 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui.css - null null
+2024-03-23 14:33:16.933 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui-bundle.js - null null
+2024-03-23 14:33:16.934 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.css - null null
+2024-03-23 14:33:16.938 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:33:16.938 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:33:16.941 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:33:16.949 -03:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2024-03-23 14:33:16.950 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.css - 200 218 text/css 17.142ms
+2024-03-23 14:33:16.971 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-03-23 14:33:16.979 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui.css - 200 151213 text/css 45.4841ms
+2024-03-23 14:33:16.983 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-23 14:33:16.980 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui-standalone-preset.js - null null
+2024-03-23 14:33:16.995 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-03-23 14:33:17.004 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:33:17.008 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui-bundle.js - 200 1385018 text/javascript 74.9065ms
+2024-03-23 14:33:17.010 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 23.6151ms
+2024-03-23 14:33:17.019 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2024-03-23 14:33:17.024 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-03-23 14:33:17.036 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui-standalone-preset.js - 200 230642 text/javascript 56.4472ms
+2024-03-23 14:33:17.089 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 69.4071ms
+2024-03-23 14:33:17.466 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-03-23 14:33:17.470 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:33:17.486 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-03-23 14:33:17.538 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/favicon-32x32.png - null null
+2024-03-23 14:33:17.541 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:33:17.543 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-03-23 14:33:17.545 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/favicon-32x32.png - 200 628 image/png 6.9631ms
+2024-03-23 14:33:17.975 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 509.7955ms
+2024-03-23 14:33:23.140 -03:00 [INF] Request starting HTTP/2 POST https://localhost:57679/registro-ponto/registrar - application/json 22
+2024-03-23 14:33:23.145 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:33:23.152 -03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-03-23 14:33:23.155 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-03-23 14:33:23.157 -03:00 [INF] Request finished HTTP/2 POST https://localhost:57679/registro-ponto/registrar - 401 0 null 17.04ms
+2024-03-23 14:33:57.535 -03:00 [INF] Request starting HTTP/2 POST https://localhost:57679/registro-ponto/registrar - application/json 22
+2024-03-23 14:33:57.609 -03:00 [INF] Executing endpoint 'HTTP: POST registro-ponto/registrar'
+2024-03-23 14:33:57.677 -03:00 [INF] Executed endpoint 'HTTP: POST registro-ponto/registrar'
+2024-03-23 14:33:57.680 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Cannot resolve scoped service 'Ponto.Eletronico.Core.Interfaces.IIdentityService' from root provider.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateResolution(ServiceCallSite callSite, IServiceScope scope, IServiceScope rootScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at FastEndpoints.ServiceResolver.CreateSingleton(Type type)
+   at FastEndpoints.EndpointDefinition.GetValidator()
+   at FastEndpoints.Endpoint`2.ValidateRequest(TRequest req, EndpointDefinition def, List`1 validationFailures, CancellationToken cancellation)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-03-23 14:33:57.715 -03:00 [INF] Request finished HTTP/2 POST https://localhost:57679/registro-ponto/registrar - 500 null text/plain; charset=utf-8 179.3194ms
+2024-03-23 14:37:31.164 -03:00 [INF] Registered 1 endpoints in 909 milliseconds.
+2024-03-23 14:37:31.355 -03:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-23 14:37:31.509 -03:00 [INF] Now listening on: https://localhost:57679
+2024-03-23 14:37:31.510 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-23 14:37:31.511 -03:00 [INF] Hosting environment: Development
+2024-03-23 14:37:31.512 -03:00 [INF] Content root path: C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.Web
+2024-03-23 14:37:35.821 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2024-03-23 14:37:35.912 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:37:35.924 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 109.541ms
+2024-03-23 14:37:35.931 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-03-23 14:37:35.937 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:37:36.070 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 138.5641ms
+2024-03-23 14:37:36.085 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-23 14:37:36.099 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 14.1052ms
+2024-03-23 14:37:36.103 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2024-03-23 14:37:36.150 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.6606ms
+2024-03-23 14:37:36.271 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-03-23 14:37:36.276 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:37:36.289 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-03-23 14:37:36.808 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 537.0878ms
+2024-03-23 14:37:46.389 -03:00 [INF] Request starting HTTP/2 POST https://localhost:57679/registro-ponto/registrar - application/json 22
+2024-03-23 14:37:46.462 -03:00 [INF] Executing endpoint 'HTTP: POST registro-ponto/registrar'
+2024-03-23 14:37:46.525 -03:00 [INF] Executed endpoint 'HTTP: POST registro-ponto/registrar'
+2024-03-23 14:37:46.528 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Cannot resolve scoped service 'Ponto.Eletronico.Core.Interfaces.IIdentityService' from root provider.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateResolution(ServiceCallSite callSite, IServiceScope scope, IServiceScope rootScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at FastEndpoints.ServiceResolver.CreateSingleton(Type type)
+   at FastEndpoints.EndpointDefinition.GetValidator()
+   at FastEndpoints.Endpoint`2.ValidateRequest(TRequest req, EndpointDefinition def, List`1 validationFailures, CancellationToken cancellation)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-03-23 14:37:46.560 -03:00 [INF] Request finished HTTP/2 POST https://localhost:57679/registro-ponto/registrar - 500 null text/plain; charset=utf-8 171.9292ms
+2024-03-23 14:39:08.307 -03:00 [INF] Registered 1 endpoints in 1.438 milliseconds.
+2024-03-23 14:39:08.525 -03:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-23 14:39:08.694 -03:00 [INF] Now listening on: https://localhost:57679
+2024-03-23 14:39:08.696 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-23 14:39:08.696 -03:00 [INF] Hosting environment: Development
+2024-03-23 14:39:08.697 -03:00 [INF] Content root path: C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.Web
+2024-03-23 14:39:09.036 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2024-03-23 14:39:09.125 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:39:09.138 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 108.4939ms
+2024-03-23 14:39:09.145 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-03-23 14:39:09.150 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:39:09.299 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 153.9915ms
+2024-03-23 14:39:09.313 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-23 14:39:09.325 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 12.5511ms
+2024-03-23 14:39:09.330 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2024-03-23 14:39:09.373 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 43.4367ms
+2024-03-23 14:39:09.506 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-03-23 14:39:09.511 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:39:09.524 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-03-23 14:39:10.031 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 525.2382ms
+2024-03-23 14:39:59.296 -03:00 [INF] Request starting HTTP/2 POST https://localhost:57679/registro-ponto/registrar - application/json 22
+2024-03-23 14:39:59.372 -03:00 [INF] Executing endpoint 'HTTP: POST registro-ponto/registrar'
+2024-03-23 14:39:59.497 -03:00 [INF] Handling CriarRegistroCommand
+2024-03-23 14:39:59.498 -03:00 [INF] Property Email : tiago.sousa.brito@gmail.com
+2024-03-23 14:40:02.402 -03:00 [ERR] Failed executing DbCommand (215ms) [Parameters=[@p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RegistroPontos] ([MudancaAutorizada], [Registro], [UserName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2024-03-23 14:40:02.439 -03:00 [ERR] An exception occurred in the database while saving changes for context type 'Ponto.Eletronico.Infrastructure.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'RegistroPontos'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:8103dcff-5ba8-4674-a052-df75ffabb61d
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'RegistroPontos'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:8103dcff-5ba8-4674-a052-df75ffabb61d
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-03-23 14:40:02.656 -03:00 [INF] Executed endpoint 'HTTP: POST registro-ponto/registrar'
+2024-03-23 14:40:02.662 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'RegistroPontos'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:8103dcff-5ba8-4674-a052-df75ffabb61d
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Ponto.Eletronico.Infrastructure.Data.AppDbContext.SaveChangesAsync(CancellationToken cancellationToken) in C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.Infrastructure\Data\AppDbContext.cs:line 29
+   at Ardalis.Specification.EntityFrameworkCore.RepositoryBase`1.SaveChangesAsync(CancellationToken cancellationToken)
+   at Ardalis.Specification.EntityFrameworkCore.RepositoryBase`1.AddAsync(T entity, CancellationToken cancellationToken)
+   at Ponto.Eletronico.UseCases.RegistroPonto.RegistrarPonto.CriarRegistroHandler.Handle(CriarRegistroCommand request, CancellationToken cancellationToken) in C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.UseCases\RegistroPonto\RegistrarPonto\CriarRegistroHandler.cs:line 16
+   at Ardalis.SharedKernel.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Ponto.Eletronico.Web.RegistroPonto.Registrar.Registrar.HandleAsync(CriarRegistroRequest request, CancellationToken ct) in C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.Web\RegistroPonto\Registrar\Registrar.cs:line 37
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-03-23 14:40:02.735 -03:00 [INF] Request finished HTTP/2 POST https://localhost:57679/registro-ponto/registrar - 500 null text/plain; charset=utf-8 3439.4916ms
+2024-03-23 14:42:46.933 -03:00 [INF] Registered 1 endpoints in 955 milliseconds.
+2024-03-23 14:42:47.149 -03:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-23 14:42:47.362 -03:00 [INF] Now listening on: https://localhost:57679
+2024-03-23 14:42:47.363 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-23 14:42:47.364 -03:00 [INF] Hosting environment: Development
+2024-03-23 14:42:47.364 -03:00 [INF] Content root path: C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.Web
+2024-03-23 14:42:50.649 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2024-03-23 14:42:50.734 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:42:50.746 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 101.5321ms
+2024-03-23 14:42:50.753 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-03-23 14:42:50.758 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:42:50.897 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 143.7362ms
+2024-03-23 14:42:50.911 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-23 14:42:50.924 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 12.9221ms
+2024-03-23 14:42:50.927 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2024-03-23 14:42:50.981 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 54.8186ms
+2024-03-23 14:42:51.115 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-03-23 14:42:51.121 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:42:51.133 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-03-23 14:42:51.663 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 548.6173ms
+2024-03-23 14:42:55.925 -03:00 [INF] Request starting HTTP/2 POST https://localhost:57679/registro-ponto/registrar - application/json 22
+2024-03-23 14:42:55.996 -03:00 [INF] Executing endpoint 'HTTP: POST registro-ponto/registrar'
+2024-03-23 14:42:56.079 -03:00 [INF] Handling CriarRegistroCommand
+2024-03-23 14:42:56.081 -03:00 [INF] Property Email : tiago.sousa.brito@gmail.com
+2024-03-23 14:42:58.194 -03:00 [ERR] Failed executing DbCommand (200ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RegistroPontos] ([Email], [MudancaAutorizada], [Registro])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2024-03-23 14:42:58.229 -03:00 [ERR] An exception occurred in the database while saving changes for context type 'Ponto.Eletronico.Infrastructure.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'RegistroPontos'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:d707817a-f571-49f2-a703-76cb77ae5114
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'RegistroPontos'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:d707817a-f571-49f2-a703-76cb77ae5114
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-03-23 14:42:58.443 -03:00 [INF] Executed endpoint 'HTTP: POST registro-ponto/registrar'
+2024-03-23 14:42:58.449 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'RegistroPontos'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:d707817a-f571-49f2-a703-76cb77ae5114
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Ponto.Eletronico.Infrastructure.Data.AppDbContext.SaveChangesAsync(CancellationToken cancellationToken) in C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.Infrastructure\Data\AppDbContext.cs:line 29
+   at Ardalis.Specification.EntityFrameworkCore.RepositoryBase`1.SaveChangesAsync(CancellationToken cancellationToken)
+   at Ardalis.Specification.EntityFrameworkCore.RepositoryBase`1.AddAsync(T entity, CancellationToken cancellationToken)
+   at Ponto.Eletronico.UseCases.RegistroPonto.RegistrarPonto.CriarRegistroHandler.Handle(CriarRegistroCommand request, CancellationToken cancellationToken) in C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.UseCases\RegistroPonto\RegistrarPonto\CriarRegistroHandler.cs:line 16
+   at Ardalis.SharedKernel.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Ponto.Eletronico.Web.RegistroPonto.Registrar.Registrar.HandleAsync(CriarRegistroRequest request, CancellationToken ct) in C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.Web\RegistroPonto\Registrar\Registrar.cs:line 37
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-03-23 14:42:58.523 -03:00 [INF] Request finished HTTP/2 POST https://localhost:57679/registro-ponto/registrar - 500 null text/plain; charset=utf-8 2597.8152ms
+2024-03-23 14:43:31.714 -03:00 [INF] Registered 1 endpoints in 1.014 milliseconds.
+2024-03-23 14:43:31.942 -03:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-23 14:43:32.099 -03:00 [INF] Now listening on: https://localhost:57679
+2024-03-23 14:43:32.101 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-23 14:43:32.102 -03:00 [INF] Hosting environment: Development
+2024-03-23 14:43:32.103 -03:00 [INF] Content root path: C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.Web
+2024-03-23 14:43:32.381 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2024-03-23 14:43:32.463 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:43:32.476 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 99.225ms
+2024-03-23 14:43:32.482 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-03-23 14:43:32.487 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:43:32.628 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 145.1459ms
+2024-03-23 14:43:32.643 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-23 14:43:32.656 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 13.2801ms
+2024-03-23 14:43:32.659 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2024-03-23 14:43:32.705 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 46.3185ms
+2024-03-23 14:43:32.844 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-03-23 14:43:32.849 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:43:32.862 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-03-23 14:43:33.376 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 533.9278ms
+2024-03-23 14:43:38.317 -03:00 [INF] Request starting HTTP/2 POST https://localhost:57679/registro-ponto/registrar - application/json 22
+2024-03-23 14:43:38.392 -03:00 [INF] Executing endpoint 'HTTP: POST registro-ponto/registrar'
+2024-03-23 14:43:38.471 -03:00 [INF] Handling CriarRegistroCommand
+2024-03-23 14:43:38.472 -03:00 [INF] Property Email : tiago.sousa.brito@gmail.com
+2024-03-23 14:43:40.599 -03:00 [INF] Executed DbCommand (222ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RegitroPontos] ([Email], [MudancaAutorizada], [Registro])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2024-03-23 14:43:40.654 -03:00 [ERR] An exception occurred in the database while saving changes for context type 'Ponto.Eletronico.Infrastructure.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Id', table 'pontoeletronico.dbo.RegitroPontos'; column does not allow nulls. INSERT fails.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:ad52631b-6379-4a74-9549-26c44447e659
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Id', table 'pontoeletronico.dbo.RegitroPontos'; column does not allow nulls. INSERT fails.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:ad52631b-6379-4a74-9549-26c44447e659
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-03-23 14:43:40.913 -03:00 [INF] Executed endpoint 'HTTP: POST registro-ponto/registrar'
+2024-03-23 14:43:40.918 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Id', table 'pontoeletronico.dbo.RegitroPontos'; column does not allow nulls. INSERT fails.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:ad52631b-6379-4a74-9549-26c44447e659
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Ponto.Eletronico.Infrastructure.Data.AppDbContext.SaveChangesAsync(CancellationToken cancellationToken) in C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.Infrastructure\Data\AppDbContext.cs:line 29
+   at Ardalis.Specification.EntityFrameworkCore.RepositoryBase`1.SaveChangesAsync(CancellationToken cancellationToken)
+   at Ardalis.Specification.EntityFrameworkCore.RepositoryBase`1.AddAsync(T entity, CancellationToken cancellationToken)
+   at Ponto.Eletronico.UseCases.RegistroPonto.RegistrarPonto.CriarRegistroHandler.Handle(CriarRegistroCommand request, CancellationToken cancellationToken) in C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.UseCases\RegistroPonto\RegistrarPonto\CriarRegistroHandler.cs:line 16
+   at Ardalis.SharedKernel.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Ponto.Eletronico.Web.RegistroPonto.Registrar.Registrar.HandleAsync(CriarRegistroRequest request, CancellationToken ct) in C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.Web\RegistroPonto\Registrar\Registrar.cs:line 37
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-03-23 14:43:40.988 -03:00 [INF] Request finished HTTP/2 POST https://localhost:57679/registro-ponto/registrar - 500 null text/plain; charset=utf-8 2671.1701ms
+2024-03-23 14:46:09.954 -03:00 [INF] Registered 1 endpoints in 1.059 milliseconds.
+2024-03-23 14:46:10.164 -03:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-23 14:46:10.327 -03:00 [INF] Now listening on: https://localhost:57679
+2024-03-23 14:46:10.329 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-23 14:46:10.330 -03:00 [INF] Hosting environment: Development
+2024-03-23 14:46:10.331 -03:00 [INF] Content root path: C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.Web
+2024-03-23 14:46:13.988 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2024-03-23 14:46:14.070 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:46:14.083 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 99.1575ms
+2024-03-23 14:46:14.088 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-03-23 14:46:14.092 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:46:14.238 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 150.0255ms
+2024-03-23 14:46:14.250 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-23 14:46:14.265 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 14.4416ms
+2024-03-23 14:46:14.269 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2024-03-23 14:46:14.323 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 54.4147ms
+2024-03-23 14:46:14.456 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-03-23 14:46:14.461 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:46:14.474 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-03-23 14:46:15.009 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 552.8233ms
+2024-03-23 14:46:34.791 -03:00 [INF] Request starting HTTP/2 POST https://localhost:57679/registro-ponto/registrar - application/json 22
+2024-03-23 14:46:34.865 -03:00 [INF] Executing endpoint 'HTTP: POST registro-ponto/registrar'
+2024-03-23 14:46:34.947 -03:00 [INF] Handling CriarRegistroCommand
+2024-03-23 14:46:34.949 -03:00 [INF] Property Email : tiago.sousa.brito@gmail.com
+2024-03-23 14:46:37.207 -03:00 [INF] Executed DbCommand (201ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RegitroPontos] ([Email], [MudancaAutorizada], [Registro])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2024-03-23 14:46:37.265 -03:00 [INF] Handled CriarRegistroCommand with Ardalis.Result.Result`1[System.Boolean] in 2314 ms
+2024-03-23 14:46:37.279 -03:00 [INF] Executed endpoint 'HTTP: POST registro-ponto/registrar'
+2024-03-23 14:46:37.294 -03:00 [INF] Request finished HTTP/2 POST https://localhost:57679/registro-ponto/registrar - 200 null application/json 2503.1153ms
+2024-03-23 14:50:00.421 -03:00 [INF] Registered 1 endpoints in 968 milliseconds.
+2024-03-23 14:50:00.605 -03:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-23 14:50:00.757 -03:00 [INF] Now listening on: https://localhost:57679
+2024-03-23 14:50:00.759 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-23 14:50:00.759 -03:00 [INF] Hosting environment: Development
+2024-03-23 14:50:00.760 -03:00 [INF] Content root path: C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.Web
+2024-03-23 14:50:04.871 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2024-03-23 14:50:04.957 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:50:04.971 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 104.4156ms
+2024-03-23 14:50:04.976 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-03-23 14:50:04.982 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:50:05.134 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 157.659ms
+2024-03-23 14:50:05.153 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-23 14:50:05.174 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 21.9049ms
+2024-03-23 14:50:05.176 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2024-03-23 14:50:05.236 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 59.9061ms
+2024-03-23 14:50:05.363 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-03-23 14:50:05.369 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:50:05.384 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-03-23 14:50:05.897 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 534.355ms
+2024-03-23 14:50:09.353 -03:00 [INF] Request starting HTTP/2 POST https://localhost:57679/registro-ponto/registrar - application/json 22
+2024-03-23 14:50:09.426 -03:00 [INF] Executing endpoint 'HTTP: POST registro-ponto/registrar'
+2024-03-23 14:54:14.692 -03:00 [INF] Registered 1 endpoints in 1.166 milliseconds.
+2024-03-23 14:54:14.876 -03:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-23 14:54:15.027 -03:00 [INF] Now listening on: https://localhost:57679
+2024-03-23 14:54:15.028 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-23 14:54:15.029 -03:00 [INF] Hosting environment: Development
+2024-03-23 14:54:15.030 -03:00 [INF] Content root path: C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.Web
+2024-03-23 14:54:18.275 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2024-03-23 14:54:18.364 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:54:18.379 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 107.7495ms
+2024-03-23 14:54:18.384 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-03-23 14:54:18.389 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:54:18.533 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 148.452ms
+2024-03-23 14:54:18.550 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-23 14:54:18.562 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2024-03-23 14:54:18.570 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 19.8686ms
+2024-03-23 14:54:18.611 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 49.157ms
+2024-03-23 14:54:18.738 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-03-23 14:54:18.744 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:54:18.757 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-03-23 14:54:19.335 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 596.9274ms
+2024-03-23 14:54:23.092 -03:00 [INF] Request starting HTTP/2 POST https://localhost:57679/registro-ponto/registrar - application/json 22
+2024-03-23 14:54:23.169 -03:00 [INF] Executing endpoint 'HTTP: POST registro-ponto/registrar'
+2024-03-23 14:54:45.280 -03:00 [INF] Handling CriarRegistroCommand
+2024-03-23 14:54:45.282 -03:00 [INF] Property Email : daniela-souza86@azevedoalves.com.br
+2024-03-23 14:54:46.252 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-03-23 14:54:46.265 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:54:46.268 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 16.6072ms
+2024-03-23 14:54:46.322 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-23 14:54:46.322 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2024-03-23 14:54:46.333 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 10.4752ms
+2024-03-23 14:54:46.375 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.9596ms
+2024-03-23 14:54:46.431 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-03-23 14:54:46.434 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 14:54:46.437 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 6.1132ms
+2024-03-23 14:54:46.445 -03:00 [ERR] An error occurred using the connection to database 'PontoEletronico' on server 'tcp:fiapidb.database.windows.net,1433'.
+2024-03-23 14:54:46.599 -03:00 [INF] Executed endpoint 'HTTP: POST registro-ponto/registrar'
+2024-03-23 14:54:46.611 -03:00 [INF] Request finished HTTP/2 POST https://localhost:57679/registro-ponto/registrar - 499 null null 23519.8333ms
+2024-03-23 14:55:41.666 -03:00 [INF] Request starting HTTP/2 POST https://localhost:57679/registro-ponto/registrar - application/json 22
+2024-03-23 14:55:41.674 -03:00 [INF] Executing endpoint 'HTTP: POST registro-ponto/registrar'
+2024-03-23 14:55:41.679 -03:00 [INF] Handling CriarRegistroCommand
+2024-03-23 14:55:41.680 -03:00 [INF] Property Email : daniela-souza86@azevedoalves.com.br
+2024-03-23 14:55:43.026 -03:00 [INF] Executed DbCommand (216ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RegitroPontos] ([Email], [MudancaAutorizada], [Registro])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2024-03-23 14:55:43.081 -03:00 [INF] Handled CriarRegistroCommand with Ardalis.Result.Result`1[System.Boolean] in 1398 ms
+2024-03-23 14:55:43.091 -03:00 [INF] Executed endpoint 'HTTP: POST registro-ponto/registrar'
+2024-03-23 14:55:43.095 -03:00 [INF] Request finished HTTP/2 POST https://localhost:57679/registro-ponto/registrar - 200 null application/json 1429.3969ms

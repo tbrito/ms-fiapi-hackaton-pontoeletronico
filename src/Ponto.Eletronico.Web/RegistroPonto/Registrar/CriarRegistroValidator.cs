@@ -11,7 +11,11 @@ namespace Ponto.Eletronico.Web.RegistroPonto.Registrar;
 /// </summary>
 public class CriarRegistroValidator : Validator<CriarRegistroRequest>
 {
-  public CriarRegistroValidator(IIdentityService identityService)
+    /// <summary>
+    /// Initializes a new instance of the <see cref="CriarRegistroValidator"/> class.
+    /// IIdentityService identityService
+    /// </summary>
+    public CriarRegistroValidator()
   {
   }
 }

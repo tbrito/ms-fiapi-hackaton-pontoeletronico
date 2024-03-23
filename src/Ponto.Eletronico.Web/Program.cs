@@ -18,6 +18,9 @@ using Serilog.Extensions.Logging;
 using System.Collections.Generic;
 using System.Reflection;
 using Ponto.Eletronico.Infrastructure;
+using Ponto.Eletronico.Infrastructure.Identity;
+
+
 var logger = Log.Logger = new LoggerConfiguration()
   .Enrich.FromLogContext()
   .WriteTo.Console()
@@ -37,6 +40,7 @@ builder.Services.Configure<CookiePolicyOptions>(options =>
     options.MinimumSameSitePolicy = SameSiteMode.None;
 });
 
+
 builder.Services.AddFastEndpoints()
                 .SwaggerDocument(o =>
                 {
@@ -45,18 +49,16 @@ builder.Services.AddFastEndpoints()
 
 ConfigureMediatR();
 
-builder.Services.AddKeyCloackAuthentication();
 builder.Services.AddInfrastructureServices(builder.Configuration, microsoftLogger);
+builder.Services.AddKeyCloackAuthentication();
+builder.Services.AddAuthorization();
 //builder.Services.AddAuthenticationSettings(builder.Configuration);
+
+builder.Services.AddScoped<IEmailSender, MimeKitEmailSender>();
 
 if (builder.Environment.IsDevelopment())
 {
-    builder.Services.AddScoped<IEmailSender, MimeKitEmailSender>();
     AddShowAllServicesSupport();
-}
-else
-{
-    builder.Services.AddScoped<IEmailSender, MimeKitEmailSender>();
 }
 
 var app = builder.Build();
@@ -73,7 +75,7 @@ else
 }
 
 app.UseAuthentication()
-   //.UseAuthorization()
+   .UseAuthorization()
    .UseFastEndpoints()
    .UseSwaggerGen(); // Includes AddFileServer and static files middleware
 
@@ -85,10 +87,12 @@ app.Run();
 void ConfigureMediatR()
 {
     var mediatRAssemblies = new[]
-  {
-  Assembly.GetAssembly(typeof(RegistroPonto)), // Core
-  Assembly.GetAssembly(typeof(CriarRegistroCommand)) // UseCases
-};
+    {
+        Assembly.GetAssembly(typeof(RegitroPontos)), // Core
+        Assembly.GetAssembly(typeof(CriarRegistroCommand)), // UseCases
+        Assembly.GetAssembly(typeof(IdentityService)) // Infraestruture
+    };
+
     builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(mediatRAssemblies!));
     builder.Services.AddScoped(typeof(IPipelineBehavior<,>), typeof(LoggingBehavior<,>));
     builder.Services.AddScoped<IDomainEventDispatcher, MediatRDomainEventDispatcher>();
