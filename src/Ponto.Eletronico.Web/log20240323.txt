@@ -977,3 +977,23 @@ VALUES (@p0, @p1, @p2);
 2024-03-23 14:55:43.081 -03:00 [INF] Handled CriarRegistroCommand with Ardalis.Result.Result`1[System.Boolean] in 1398 ms
 2024-03-23 14:55:43.091 -03:00 [INF] Executed endpoint 'HTTP: POST registro-ponto/registrar'
 2024-03-23 14:55:43.095 -03:00 [INF] Request finished HTTP/2 POST https://localhost:57679/registro-ponto/registrar - 200 null application/json 1429.3969ms
+2024-03-23 21:36:01.938 -03:00 [INF] Registered 1 endpoints in 1.000 milliseconds.
+2024-03-23 21:36:02.213 -03:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-23 21:36:02.507 -03:00 [INF] Now listening on: https://localhost:57679
+2024-03-23 21:36:02.526 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-23 21:36:02.592 -03:00 [INF] Hosting environment: Development
+2024-03-23 21:36:02.602 -03:00 [INF] Content root path: C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.Web
+2024-03-23 21:36:06.838 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2024-03-23 21:36:07.081 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 21:36:07.105 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 273.0031ms
+2024-03-23 21:36:07.115 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-03-23 21:36:07.128 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 21:36:07.438 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 323.907ms
+2024-03-23 21:36:07.454 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-23 21:36:07.482 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 28.2397ms
+2024-03-23 21:36:07.486 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2024-03-23 21:36:07.796 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 310.5138ms
+2024-03-23 21:36:07.895 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-03-23 21:36:07.902 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-23 21:36:07.918 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-03-23 21:36:08.688 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 793.4026ms

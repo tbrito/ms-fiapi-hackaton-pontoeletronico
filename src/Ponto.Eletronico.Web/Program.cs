@@ -19,6 +19,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using Ponto.Eletronico.Infrastructure;
 using Ponto.Eletronico.Infrastructure.Identity;
+using Ponto.Eletronico.Infrastructure.Messaging;
 
 
 var logger = Log.Logger = new LoggerConfiguration()
@@ -52,7 +53,7 @@ ConfigureMediatR();
 builder.Services.AddInfrastructureServices(builder.Configuration, microsoftLogger);
 builder.Services.AddKeyCloackAuthentication();
 builder.Services.AddAuthorization();
-//builder.Services.AddAuthenticationSettings(builder.Configuration);
+builder.Services.AddServiceBus(builder.Configuration);
 
 builder.Services.AddScoped<IEmailSender, MimeKitEmailSender>();
 
