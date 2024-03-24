@@ -8,7 +8,7 @@ public class RegitroPontos : EntityBase, IAggregateRoot
     public RegitroPontos(string email)
     {
         Email = email;
-        Registro = DateTime.Now;
+        Registro = DateTime.Now.ToUniversalTime();
     }
 
     public int Id { get; set; }

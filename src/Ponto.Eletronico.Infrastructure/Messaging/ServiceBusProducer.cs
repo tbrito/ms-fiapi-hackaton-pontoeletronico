@@ -1,23 +1,25 @@
 ﻿using Microsoft.Azure.ServiceBus;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using Ponto.Eletronico.Core.Interfaces;
+using System.Configuration;
 using System.Text;
 
 namespace Ponto.Eletronico.Infrastructure.Messaging
 {
     public class ServiceBusProducer : IServiceBusProducer
     {
+        private readonly IConfiguration configuration;
         private readonly ILogger<ServiceBusProducer> logger;
-        private readonly ServiceBusSettings settings;
-
+        
         public ServiceBusProducer(
-            IOptionsMonitor<ServiceBusSettings> options,
+            IConfiguration configuration,
             ILogger<ServiceBusProducer> logger)
         {
+            this.configuration = configuration;
             this.logger = logger;
-            settings = options.CurrentValue;
         }
 
         public async Task SendAsync<T>(T message, string topicName)
@@ -39,18 +41,14 @@ namespace Ponto.Eletronico.Infrastructure.Messaging
 
         private ITopicClient Connect(string topicName)
         {
-            if (settings == null)
-            {
-                throw new ArgumentException("ServiceBusSettings está nulo");
-            }
-
-            if (string.IsNullOrEmpty(settings.ConnectionString))
+            var connectionString = this.configuration.GetConnectionString("ServiceBus");
+            if (string.IsNullOrEmpty(connectionString))
             {
                 throw new ArgumentException("ServiceBusSettings.ConnectionString está nulo");
             }
 
 
-            ServiceBusConnection connection = new ServiceBusConnection(settings.ConnectionString);
+            ServiceBusConnection connection = new ServiceBusConnection(connectionString);
             return new TopicClient(connection, topicName, null);
         }
 

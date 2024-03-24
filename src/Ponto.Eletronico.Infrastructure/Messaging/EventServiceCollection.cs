@@ -1,11 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Ponto.Eletronico.Core.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Ponto.Eletronico.Infrastructure.Messaging
 {
@@ -17,8 +12,6 @@ namespace Ponto.Eletronico.Infrastructure.Messaging
             {
                 throw new ArgumentNullException(nameof(config));
             }
-
-            services.Configure<ServiceBusSettings>(config.GetSection("ServiceBusSettings"));
 
             services.AddSingleton<IServiceBusProducer, ServiceBusProducer>();
 

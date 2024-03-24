@@ -1,0 +1,43 @@
+2024-03-24 05:48:17.498 -03:00 [INF] Registered 1 endpoints in 3.405 milliseconds.
+2024-03-24 05:48:18.383 -03:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-24 05:48:18.734 -03:00 [INF] Now listening on: https://localhost:57679
+2024-03-24 05:48:18.736 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-24 05:48:18.737 -03:00 [INF] Hosting environment: Development
+2024-03-24 05:48:18.738 -03:00 [INF] Content root path: C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.Web
+2024-03-24 05:48:21.661 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2024-03-24 05:48:21.847 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-24 05:48:21.862 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 207.1142ms
+2024-03-24 05:48:21.867 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-03-24 05:48:21.875 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-24 05:48:22.298 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 430.7724ms
+2024-03-24 05:48:22.316 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui.css - null null
+2024-03-24 05:48:22.330 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-24 05:48:22.316 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui-bundle.js - null null
+2024-03-24 05:48:22.316 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.css - null null
+2024-03-24 05:48:22.353 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-24 05:48:22.356 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-24 05:48:22.318 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui-standalone-preset.js - null null
+2024-03-24 05:48:22.348 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-24 05:48:22.342 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2024-03-24 05:48:22.366 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 48.5368ms
+2024-03-24 05:48:22.373 -03:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2024-03-24 05:48:22.369 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-24 05:48:22.402 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-03-24 05:48:22.397 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.css - 200 218 text/css 80.7302ms
+2024-03-24 05:48:22.429 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-03-24 05:48:22.417 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui.css - 200 151213 text/css 100.827ms
+2024-03-24 05:48:22.436 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui-standalone-preset.js - 200 230642 text/javascript 118.568ms
+2024-03-24 05:48:22.465 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-03-24 05:48:22.468 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui-bundle.js - 200 1385018 text/javascript 151.3489ms
+2024-03-24 05:48:22.489 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 148.1501ms
+2024-03-24 05:48:22.826 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-03-24 05:48:22.830 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-24 05:48:22.885 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-03-24 05:48:23.463 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 637.9034ms
+2024-03-24 05:48:42.479 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:57679/registro-ponto/registrar - application/json 24
+2024-03-24 05:48:42.601 -03:00 [INF] Executing endpoint 'HTTP: POST registro-ponto/registrar'
+2024-03-24 05:48:42.793 -03:00 [INF] Handling CriarRegistroCommand
+2024-03-24 05:48:42.795 -03:00 [INF] Property Email : daniela-souza86@azevedoalves.com.br
+2024-03-24 05:49:02.829 -03:00 [INF] Handled CriarRegistroCommand with Ardalis.Result.Result`1[System.Boolean] in 20031 ms
+2024-03-24 05:49:02.847 -03:00 [INF] Executed endpoint 'HTTP: POST registro-ponto/registrar'
+2024-03-24 05:49:02.852 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:57679/registro-ponto/registrar - 200 null application/json 20372.6833ms
