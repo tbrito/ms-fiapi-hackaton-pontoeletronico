@@ -17,7 +17,7 @@ public class RegitroPontos : EntityBase, IAggregateRoot
     
     public DateTime Registro { get; set; }
     
-    public bool MudancaAutorizada { get; set; } = false;
+    public bool MudancaAutorizada { get; set; } = true;
 
     public void AutorizarMudanca()
     {

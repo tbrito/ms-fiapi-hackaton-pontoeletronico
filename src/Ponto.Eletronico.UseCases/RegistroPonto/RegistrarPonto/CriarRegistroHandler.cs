@@ -16,6 +16,7 @@ public class CriarRegistroHandler(IRepository<Core.Entities.RegitroPontos> _repo
 
         var createdItem = await _repository.AddAsync(registroPonto, cancellationToken);
 
+        ///para publicar na pipeline
         await serviceBusProducer.SendAsync<RegitroPontos>(registroPonto, "grupo23-pontobatido");
 
         return createdItem is Core.Entities.RegitroPontos;

@@ -41,3 +41,30 @@
 2024-03-24 05:49:02.829 -03:00 [INF] Handled CriarRegistroCommand with Ardalis.Result.Result`1[System.Boolean] in 20031 ms
 2024-03-24 05:49:02.847 -03:00 [INF] Executed endpoint 'HTTP: POST registro-ponto/registrar'
 2024-03-24 05:49:02.852 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:57679/registro-ponto/registrar - 200 null application/json 20372.6833ms
+2024-03-24 15:54:25.475 -03:00 [INF] Registered 1 endpoints in 4.199 milliseconds.
+2024-03-24 15:54:26.286 -03:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-24 15:54:26.520 -03:00 [INF] Now listening on: https://localhost:57679
+2024-03-24 15:54:26.522 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-24 15:54:26.523 -03:00 [INF] Hosting environment: Development
+2024-03-24 15:54:26.524 -03:00 [INF] Content root path: C:\_devz\fiapi\hackaton\ms-fiapi-hackaton-pontoeletronico\src\Ponto.Eletronico.Web
+2024-03-24 15:54:27.501 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2024-03-24 15:54:27.645 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-24 15:54:27.658 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 162.1728ms
+2024-03-24 15:54:27.663 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-03-24 15:54:27.671 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-24 15:54:27.817 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 153.858ms
+2024-03-24 15:54:27.855 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-24 15:54:27.856 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2024-03-24 15:54:27.874 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 19.2309ms
+2024-03-24 15:54:27.926 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 70.1818ms
+2024-03-24 15:54:28.285 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-03-24 15:54:28.291 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-24 15:54:28.334 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-03-24 15:54:28.879 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 594.4153ms
+2024-03-24 15:54:31.627 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-03-24 15:54:31.638 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-24 15:54:31.643 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 15.9935ms
+2024-03-24 15:54:31.761 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/favicon.ico - null null
+2024-03-24 15:54:31.766 -03:00 [INF] Bearer was not authenticated. Failure message: Unable to authenticate. Authorization token does not exist. Use the Bearer Token
+2024-03-24 15:54:31.769 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/favicon.ico - 404 0 null 8.1453ms
+2024-03-24 15:54:31.776 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:57679/favicon.ico, Response status code: 404
